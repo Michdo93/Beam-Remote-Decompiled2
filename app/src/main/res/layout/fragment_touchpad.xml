@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.studiodiip.bulbbeam.mousecontroller.view.Touchpad android:id="@id/touchpad" android:background="@drawable/touchpad_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/btnMultiTouch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_multitouch" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/BeamButton" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/black" android:id="@id/holdToGrab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hold_to_grab" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:textAllCaps="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/scrollbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/scrollbar_bar" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_scrollbar" />
+    </RelativeLayout>
+</RelativeLayout>

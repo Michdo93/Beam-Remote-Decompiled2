@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffbcb9bf" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_gravity="bottom|center|right" android:id="@id/backspace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send_backspace" style="?android:attr/buttonStyleSmall" />
+    <EditText android:gravity="top" android:id="@id/customEditText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/your_text" android:ems="10" android:layout_centerHorizontal="true" />
+    <Button android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_back" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="?android:attr/buttonStyleSmall" />
+    <SeekBar android:id="@id/seekBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:max="3" android:layout_alignRight="@id/customEditText" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_toStartOf="@id/customEditText" android:layout_alignEnd="@id/customEditText" android:layout_alignParentStart="true" />
+    <Button android:id="@id/flipButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flip_screen" android:layout_toRightOf="@id/backspace" android:layout_above="@id/back" android:layout_toEndOf="@id/backspace" />
+</RelativeLayout>

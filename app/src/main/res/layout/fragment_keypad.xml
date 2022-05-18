@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.studiodiip.bulbbeam.mousecontroller.view.TypefaceButton android:textStyle="bold" android:id="@id/btnOk" android:text="@string/btn_ok" style="@style/BeamButton.Keypad" />
+    <ImageButton android:id="@id/btnLeft" android:src="@drawable/ic_keypad_left" android:layout_toLeftOf="@id/btnOk" style="@style/BeamButton.Keypad" />
+    <ImageButton android:id="@id/btnTop" android:src="@drawable/ic_keypad_top" android:layout_above="@id/btnOk" style="@style/BeamButton.Keypad" />
+    <ImageButton android:id="@id/btnRight" android:src="@drawable/ic_keypad_right" android:layout_toRightOf="@id/btnOk" style="@style/BeamButton.Keypad" />
+    <ImageButton android:id="@id/btnBottom" android:src="@drawable/ic_keypad_bottom" android:layout_below="@id/btnOk" style="@style/BeamButton.Keypad" />
+</RelativeLayout>

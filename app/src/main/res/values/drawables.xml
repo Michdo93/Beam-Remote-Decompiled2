@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="beambutton_bg_default">#ffffffff</item>
+    <item type="drawable" name="beambutton_bg_pressed">#ffaaaaaa</item>
+    <item type="drawable" name="beambutton_bg_selected">#ffffffff</item>
+</resources>

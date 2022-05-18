@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.studiodiip.bulbbeam.mousecontroller.view.Touchpad android:id="@id/touchpad_projector_light" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <ImageView android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:src="@drawable/ic_brightness" android:scaleType="centerInside" />
+        <View android:background="@color/black" android:layout_width="2.0dip" android:layout_height="fill_parent" />
+        <SeekBar android:id="@id/seekBar_light" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="100" android:progress="0" android:indeterminate="false" android:progressDrawable="@drawable/styled_progress_light" android:thumb="@drawable/seekbar_thumb_light" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.studiodiip.bulbbeam.mousecontroller.view.TypefaceButton android:textStyle="bold" android:id="@id/btnHideProjectorLight" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hide_projector_light" android:onClick="onBtnHideProjectorLightClick" style="@style/BeamButton" />
+</LinearLayout>

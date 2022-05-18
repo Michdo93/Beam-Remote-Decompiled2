@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ff222222" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="50.0sp" android:textStyle="bold" android:textColor="#ff33b5e5" android:gravity="center" android:id="@id/fullscreen_content" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/dummy_content" android:keepScreenOn="false" />
+    <FrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/fullscreen_content_controls" android:background="@color/black_overlay" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?metaButtonBarStyle">
+            <ToggleButton android:id="@id/screenToggle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:textOn="Screen on" android:textOff="Screen off" android:text="@string/screen" android:layout_weight="1.0" />
+            <Button android:id="@id/back" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/btn_back" android:layout_weight="1.0" style="?metaButtonBarButtonStyle" />
+            <Button android:id="@id/menu" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/btn_home" android:layout_weight="1.0" style="?metaButtonBarButtonStyle" />
+            <Button android:id="@id/click" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/click" android:layout_weight="1.0" style="?metaButtonBarButtonStyle" />
+            <Button android:id="@id/appsButton" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/apps" android:layout_weight="1.0" style="?metaButtonBarButtonStyle" />
+            <Button android:id="@id/keyboard" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/keyboard" android:layout_weight="1.0" style="?metaButtonBarButtonStyle" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_launcher" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/imageViewMouse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/muis" />
+    </FrameLayout>
+</FrameLayout>

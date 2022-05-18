@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.studiodiip.bulbbeam.mousecontroller">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:label="@string/app_name" android:name="com.studiodiip.bulbbeam.mousecontroller.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <activity android:hardwareAccelerated="true" android:label="@string/title_activity_mouse" android:name="com.studiodiip.bulbbeam.mousecontroller.activity.MouseActivity"/>
+        <activity android:hardwareAccelerated="true" android:label="@string/app_name" android:name="com.studiodiip.bulbbeam.mousecontroller.activity.MainActivity"/>
+        <activity android:hardwareAccelerated="true" android:label="@string/app_name" android:name="com.studiodiip.bulbbeam.mousecontroller.activity.TestActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:label="@string/title_activity_keyboard_control" android:name="com.studiodiip.bulbbeam.mousecontroller.keyboardControl"/>
+        <activity android:hardwareAccelerated="true" android:label="@string/title_activity_app_list" android:name="com.studiodiip.bulbbeam.mousecontroller.appListActivity"/>
+        <activity android:hardwareAccelerated="true" android:label="@string/title_activity_select_bulb" android:name="com.studiodiip.bulbbeam.mousecontroller.activity.SelectBulbActivity"/>
+        <service android:enabled="true" android:exported="true" android:name="com.studiodiip.bulbbeam.mousecontroller.socketService"/>
+        <service android:enabled="true" android:exported="true" android:name="com.studiodiip.bulbbeam.mousecontroller.service.ConnectionService" android:stopWithTask="true"/>
+    </application>
+
+</manifest>
